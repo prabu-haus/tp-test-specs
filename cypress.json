@@ -1,0 +1,10 @@
+{
+  "viewportWidth": 1100,
+  "browser": "chrome",
+  "defaultCommandTimeout": 20000,
+  "video": false,
+  "env": {
+    "allureResultsPath": "allure-results",
+    "allure": true
+  }
+}

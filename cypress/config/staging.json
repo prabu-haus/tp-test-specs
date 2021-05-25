@@ -1,0 +1,6 @@
+{
+  "env": {
+    "baseUrl": "https://staging.haus.com/",
+    "configName": "staging"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "env": {
+    "baseUrl": "https://haus.com/",
+    "configName": "production"
+  }
+}

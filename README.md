@@ -1,1 +1,1 @@
-# Collection of Automation Test Scenarios
+# End 2 End Automation Tests

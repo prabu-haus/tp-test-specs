@@ -1,0 +1,37 @@
+{
+  "name": "tp-test-specs",
+  "version": "1.0.0",
+  "description": "End 2 End Automation Tests",
+  "main": "index.js",
+  "author": "Haus Inc",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github-haus:prabu-haus/tp-test-specs.git"
+  },
+  "scripts": {
+    "cypress": "./node_modules/.bin/cypress open --env configFile=staging",
+    "test": "./node_modules/.bin/cypress run --browser chrome --headless --env configFile=production",
+    "test:staging": "./node_modules/.bin/cypress run --browser chrome  --headless --env configFile=staging",
+    "test:localhost": "./node_modules/.bin/cypress run --browser chrome  --headless --env configFile=localhost",
+    "allure:generate": "./node_modules/.bin/allure generate allure-results --clean --output allure-reports",
+    "allure:open": "./node_modules/.bin/allure open allure-reports",
+    "allure:serve": "./node_modules/.bin/allure serve allure-results",
+    "allure:clear": "rm -r allure-results/ allure-reports/ cypress/screenshots || true",
+    "allure:history": "mv -f allure-reports/history allure-results/history && rm -r allure-reports/latest || true"
+  },
+  "dependencies": {
+    "@shelex/cypress-allure-plugin": "^2.5.1",
+    "allure-commandline": "^2.13.8",
+    "cypress": "^7.2.0",
+    "cypress-wait-until": "^1.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-chai-friendly": "^0.7.1",
+    "eslint-plugin-cypress": "^2.11.3",
+    "eslint-plugin-import": "^2.23.3",
+    "fs-extra": "^10.0.0"
+  }
+}

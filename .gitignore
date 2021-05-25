@@ -1,0 +1,30 @@
+node_modules
+allure-reports
+allure-results
+cypress/screenshots
+cypress/videos
+mochawesome-report
+report.json
+
+# IntelliJ
+.idea/*
+*.iws
+*.iml
+*.ipr
+
+# VS Code
+.settings/
+.vscode/
+.classpath
+.project
+bin/
+
+# OS
+*~
+.DS_Store
+
+# Others
+*junk*
+*jsonSrc*
+target/
+out/
